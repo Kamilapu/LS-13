@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <form class="form">
+          <h2 class="form__title">Login to your Account</h2>
+          <div class="form__descript">Enter to continue and explore within your grasp
+          </div>
+
+          <label class="field">
+               <input class="field__input" type="text" placeholder="Enter email or phone">
+               <img class="field__user" src="icon/user.svg" alt="user">
+          </label>
+          <label class="field">
+               <input class="field__input" type="password" placeholder="Password">
+               <img class="field__key" src="icon/key.svg" alt="key">
+               <img class="field__eye" src="icon/eye.svg" alt="eye">
+          </label>
+
+          <div class="form__row">
+               <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input">
+                    <div class="checkbox__box">&#10003</div>
+                    <div class="checkbox__label">Remember Me</div>
+                    <a class="forgot" href="/">Forgot password?</a>
+               </label>
+          </div>
+
+          <button type="submit" class="btn_log form__btn"><a href="/">Login to Continue</a></button>
+          <div class="sign">Don’t have an account ? <a href="/" class="sign_up">Sign up</a></div>
+     </form>
+</body>
+
+</html>

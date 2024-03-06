@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(106deg, #5281f8 5.11%, rgba(140, 0, 189, 0.56) 88.44%);
+}
+
+.form {
+  max-width: 546px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 226px;
+  margin-bottom: 158px;
+  padding: 88px 70px 80px 70px;
+}
+.form__title {
+  color: #03014C;
+  font-family: "Open Sans", sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.form__descript {
+  color: #03014C;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.field {
+  display: block;
+  position: relative;
+  margin-bottom: 23px;
+}
+.field__input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #03014C;
+  padding: 24px 58px 24px 72px;
+  color: #03014C;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.field__user, .field__key {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 33px;
+}
+.field__eye {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.btn_log {
+  display: inline-block;
+  border-radius: 8px;
+  background: #5381f8;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 22px 139px;
+  margin-bottom: 32px;
+}
+
+.sign {
+  color: #03014c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.sign_up {
+  color: #5381f8;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.checkbox__label {
+  color: #03014C;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.6;
+}

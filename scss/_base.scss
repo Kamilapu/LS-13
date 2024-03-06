@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(
+    106deg,
+    #5281f8 5.11%,
+    rgba(140, 0, 189, 0.56) 88.44%
+  );
+}
+
+.form {
+  max-width: 546px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 226px;
+  margin-bottom: 158px;
+  padding: 88px 70px 80px 70px;
+
+  &__title {
+    color: $text-color;
+    font-family: $ff;
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  &__descript {
+    color: $text-color;
+    font-family: $ff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 60px;
+  }
+
+  &__row {
+  }
+
+  &__btn {
+  }
+
+  &__sign {
+  }
+}
+
+.field {
+  display: block;
+  position: relative;
+  margin-bottom: 23px;
+
+  &__input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid $text-color;
+    padding: 24px 58px 24px 72px;
+
+    color: $text-color;
+    font-family: $ff;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &::placeholder {
+  }
+
+  &__user,
+  &__key {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 33px;
+  }
+
+  &__eye {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.btn {
+  &_log {
+    display: inline-block;
+    border-radius: 8px;
+    background: #5381f8;
+    color: #fff;
+    font-family: $ff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 22px 139px;
+    margin-bottom: 32px;
+  }
+}
+
+.sign {
+  color: #03014c;
+  font-family: $ff;
+  font-size: 13px;
+  font-weight: 400;
+
+  &_up {
+    color: #5381f8;
+    font-family: $ff;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+.checkbox {
+  display: flex;
+
+  &__input {
+  }
+
+  &__box {
+  }
+
+  &__label {
+    color: $text-color;
+    font-family: $ff;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.6;
+  }
+}
