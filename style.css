@@ -32,6 +32,14 @@ body {
   margin-bottom: 158px;
   padding: 88px 70px 80px 70px;
 }
+@media (max-width: 592px) {
+  .form {
+    padding: 30px;
+    border-radius: 0%;
+    margin-top: 50px;
+    margin-bottom: auto;
+  }
+}
 .form__title {
   color: #03014C;
   font-family: "Open Sans", sans-serif;
@@ -39,18 +47,52 @@ body {
   font-weight: 700;
   margin-bottom: 12px;
 }
+@media (max-width: 592px) {
+  .form__title {
+    font-size: 26px;
+  }
+}
 .form__descript {
   color: #03014C;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
   margin-bottom: 60px;
+  opacity: 0.6;
+}
+@media (max-width: 592px) {
+  .form__descript {
+    font-size: 11px;
+  }
+}
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+.form__row .forgot {
+  color: #03014C;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.field:first-of-type {
+  margin-bottom: 23px;
 }
 
 .field {
   display: block;
   position: relative;
-  margin-bottom: 23px;
 }
 .field__input {
   width: 100%;
@@ -61,6 +103,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
+  outline: none;
 }
 .field__user, .field__key {
   position: absolute;
@@ -78,7 +121,8 @@ body {
   cursor: pointer;
 }
 
-.btn_log {
+.btn {
+  cursor: pointer;
   display: inline-block;
   border-radius: 8px;
   background: #5381f8;
@@ -86,8 +130,14 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 600;
-  padding: 22px 139px;
+  padding: 23px 46px;
+  width: 100%;
   margin-bottom: 32px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.btn:hover {
+  background: #b431c5;
 }
 
 .sign {
@@ -107,6 +157,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox .checkbox__input:checked ~ .checkbox__box {
+  background-color: #5381f8;
+  border: 1px solid #5381f8;
+  color: white;
+}
+.checkbox__box {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #03014c;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
 }
 .checkbox__label {
   color: #03014C;
